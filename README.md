@@ -1,4 +1,4 @@
-# git-reset-demo
+# git-reset-demo docs
 ## This is a test change
 
 ### Your commit is undone, but your changes remain staged.
