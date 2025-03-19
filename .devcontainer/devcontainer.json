@@ -1,25 +1,8 @@
 {
-    "name": "React.js Codespace",
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
-    "features": {
-      "ghcr.io/devcontainers/features/node:20": {}
-    },
-    "customizations": {
-      "vscode": {
-        "settings": {
-          "editor.formatOnSave": true,
-          "terminal.integrated.defaultProfile.linux": "zsh"
-        },
-        "extensions": [
-          "dbaeumer.vscode-eslint",
-          "esbenp.prettier-vscode",
-          "streetsidesoftware.code-spell-checker",
-          "eamodio.gitlens"
-        ]
-      }
-    },
-    "postCreateCommand": "npm install",
-    "forwardPorts": [3000],
-    "remoteUser": "node"
-  }
-  
+  "name": "React Codespace with GitHub CLI",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "postCreateCommand": "gh auth login"
+}
